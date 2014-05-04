@@ -1,5 +1,5 @@
-var hound = require('./watcher.js');
-var watcher = hound.watch('../watcher');
+var Watcher = require('./watcher.js');
+var watcher = Watcher.watch('../watcher');
 
 Array.prototype.last = function() {
     return this[this.length -1]

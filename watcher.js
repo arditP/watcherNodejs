@@ -72,9 +72,7 @@ Watcher.prototype.addWatch = function(watchSrc) {
 }
 
 Watcher.prototype.checkRename = function(stats1, stats2) {
-    return (
-            stats1.atime == stats2.atime &&
-            stats1);
+    return equalStats(stat1, stat2);
 }
 
 Watcher.prototype.createEvent = function(file, stats) {
