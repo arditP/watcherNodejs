@@ -1,12 +1,6 @@
 var Watcher = require('./watcher.js');
 var watcher = Watcher.watch('../watcher');
 
-Array.prototype.last = function() {
-    return this[this.length -1]
-}
-
-a = [1, 2, 3, 4]
-console.log(a.last());
 watcher.on('createFile', function(filename, stats) {
 	console.log('File created %s', filename);
 });
