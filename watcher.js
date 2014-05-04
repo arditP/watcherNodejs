@@ -76,7 +76,7 @@ Watcher.prototype.checkRename = function(stats1, stats2) {
 }
 
 Watcher.prototype.createEvent = function(file, stats) {
-	if(isDirectory(stats))
+    if(isDirectory(stats))
         this.emit('createDirectory', file, stats);
     else if(isFile(stats))
         this.emit('createFile', file, stats);
@@ -112,7 +112,6 @@ Watcher.prototype.removeWatch = function(src) {
 }
 
 Watcher.prototype.clear = function() {
-    var self = this
     for (var file in this.watchers) {
         self.unwatch(file)
     }
