@@ -148,7 +148,7 @@ function equalStats(stat1, stat2) {
             equalTime(stat1.mtime, stat2.mtime) &&
             equalTime(stat1.ctime, stat2.ctime) &&
             stat1.mode == stat2.mode &&
-            stat1.size == stat2.size &&
+            stat1.size == stat2.size
         );
 }
 
